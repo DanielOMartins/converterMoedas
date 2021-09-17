@@ -1,0 +1,21 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+.titulo__box{
+    background: #94A1E0;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10%;
+    padding: 20px 0;
+
+    border-radius: 10px;
+    box-shadow: 0 3px 10px;
+}
+.titulo__logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+}

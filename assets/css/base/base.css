@@ -1,0 +1,9 @@
+body{
+    background: #323B66;
+
+    font-family: Nunito Sans;
+}
+::placeholder{
+    color: #323B66;
+    text-align: center;
+}
