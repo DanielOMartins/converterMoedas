@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conversor de Moedas</title>
+        <title>Resultado - Conversor de Moedas</title>
 
         <link rel="stylesheet" href="./assets/css/base/reset.css">
         <link rel="stylesheet" href="./assets/css/base/base.css">
         <link rel="stylesheet" href="./assets/css/conversor/titulo.css">
         <link rel="stylesheet" href="./assets/css/conversor/conteudo.css">
+        <link rel="stylesheet" href="./assets/css/resultado.css">
     </head>
     <body>
         <header class="titulo">
@@ -17,18 +18,15 @@
             </div>
         </header>
         <main class="conteudo">
-            <form class="container">
-                <div class="conteudo__conversao">
-                    <input type="text" name="converter" class="conteudo__input" placeholder="Converter (Ex: USD-BRL)" data-moeda required>
+            <section class="resultado container">
+                <p class="resultado__valor">Resultado</p>
+                <p class="resultado__valor" data-resultado></p>
+                <div>
+                    <button class="resultado__btn" data-resultado-btn>Converter outro valor</button>
                 </div>
-                <div class="conteudo__conversao">
-                    <input type="text" name="converter" class="conteudo__input" placeholder="Valor a ser convertido" data-valor required>
-                </div>
-                <div class="conteudo__btn-box">
-                    <button class="conteudo__btn" data-converter>Converter</button>
-                </div>
-            </form>
+            </section>
         </main>
-        <script type="module" src="./js/converter.js"></script>
+        <script type="module" src="./js/resultado.js"></script>
+
     </body>
 </html>
