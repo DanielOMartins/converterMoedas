@@ -3,6 +3,7 @@ const converterMoeda = (evento) =>{
 
     var moeda = document.querySelector('[data-moeda]');
     moeda = moeda.value + '-BRL';
+    //moeda = 'BRL-' + moeda.value;
 
     const url = `https://economia.awesomeapi.com.br/json/last/${moeda}`;
     const options = {
