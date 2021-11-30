@@ -1,6 +1,6 @@
 const resultado = document.querySelector('[data-resultado]');
 
-var resultadoConversao = sessionStorage.getItem('resultado');
+var resultadoConversao = localStorage.getItem('resultado');
 resultadoConversao = parseFloat(resultadoConversao);
 resultadoConversao = resultadoConversao.toLocaleString({style: 'currency', currency: 'BRL'});
 

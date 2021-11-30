@@ -9,26 +9,29 @@
         <link rel="stylesheet" href="./assets/css/base/base.css">
         <link rel="stylesheet" href="./assets/css/conversor/titulo.css">
         <link rel="stylesheet" href="./assets/css/conversor/conteudo.css">
+        <link rel="stylesheet" href="./assets/css/responsivo/indexResponsivo.css">
     </head>
     <body>
-        <header class="titulo">
-            <div class="titulo__box">
-                <h1 class="titulo__logo">Conversor <br>de Moedas</h1>
-            </div>
-        </header>
-        <main class="conteudo">
-            <form class="container">
-                <div class="conteudo__conversao">
-                    <input type="text" name="converter" class="conteudo__input" placeholder="Converter (Ex: USD-BRL)" data-moeda required>
+        <div class="container">
+            <header class="titulo">
+                <div class="titulo__box">
+                    <h1 class="titulo__logo">Conversor <br>de Moedas</h1>
                 </div>
-                <div class="conteudo__conversao">
-                    <input type="text" name="converter" class="conteudo__input" placeholder="Valor a ser convertido" data-valor required>
-                </div>
-                <div class="conteudo__btn-box">
-                    <button class="conteudo__btn" data-converter>Converter</button>
-                </div>
-            </form>
-        </main>
+            </header>
+            <main class="conteudo">
+                <form class="box">
+                    <div class="conteudo__conversao">
+                        <input type="text" name="converter" class="conteudo__input" placeholder="Converter (Ex: USD-BRL)" data-moeda required>
+                    </div>
+                    <div class="conteudo__conversao">
+                        <input type="text" name="converter" class="conteudo__input" placeholder="Valor a ser convertido" data-valor required>
+                    </div>
+                    <div class="conteudo__btn-box">
+                        <button class="conteudo__btn" data-converter>Converter</button>
+                    </div>
+                </form>
+            </main>
+        </div>
         <script type="module" src="./js/converter.js"></script>
     </body>
 </html>

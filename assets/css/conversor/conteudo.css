@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
 }
-.container{
+.box{
     width: 90%;
     height: 270px;
     padding-top: 10px;

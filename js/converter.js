@@ -18,10 +18,11 @@ const converterMoeda = (evento) =>{
         response => response.json()
     ).then(
         data =>{
-            sessionStorage.setItem('resultado', converterValor(data[Object.keys(data)[0]]));
+            localStorage.setItem('resultado', converterValor(data[Object.keys(data)[0]]));
         }
     )
     window.location.href = './resultado.html';
+    
 }
 const converterBtn = document.querySelector('[data-converter]');
 converterBtn.addEventListener('click', converterMoeda);
