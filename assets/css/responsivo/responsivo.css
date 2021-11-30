@@ -1,0 +1,11 @@
+@media screen and (min-width: 850px){
+    .conteudo{
+        margin-top: 10%;
+    }
+    .box{
+        width: 55%;
+    }
+    .titulo__box{
+        width: 42%;
+    }
+}
